@@ -584,7 +584,7 @@ export default function App() {
           </div>
 
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-indigo-200 mb-4 tracking-tight">Kuis & Game 5R AI</h1>
+            <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-indigo-200 mb-4 tracking-tight">EHAQUIZ</h1>
             <p className="text-indigo-100 mb-10 font-medium text-lg">Pilih peran Anda untuk masuk ke arena pembelajaran atau tantangan Game 5R.</p>
             
             <div className="space-y-4">

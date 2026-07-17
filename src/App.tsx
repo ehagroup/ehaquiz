@@ -585,7 +585,7 @@ export default function App() {
 
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-white to-indigo-200 mb-4 tracking-tight">Ehaquiz</h1>
-            <p className="text-indigo-100 mb-10 font-medium text-lg">Pilih peran Anda untuk masuk ke arena pembelajaran atau tantangan Game 5R.</p>
+            <p className="text-indigo-100 mb-10 font-medium text-lg">Pilih peran Anda untuk masuk ke arena kuis.</p>
             
             <div className="space-y-4">
               <button onClick={() => setRole('teacher')} className="w-full py-4 glass-card hover:bg-white/10 text-white rounded-2xl font-bold text-lg shadow-lg flex items-center justify-center gap-4 transition-all">

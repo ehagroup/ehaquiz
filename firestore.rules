@@ -1,0 +1,23 @@
+rules_version = '2';
+
+// ============================================================================
+// CONTOH FIRESTORE SECURITY RULES untuk "Kuis & Game 5R AI"
+// ----------------------------------------------------------------------------
+// Cara pakai:
+// 1. Buka Firebase Console -> pilih project -> Firestore Database -> Rules
+// 2. Ganti isi rules dengan isi file ini, lalu klik "Publish"
+//
+// Catatan: aplikasi ini memakai Anonymous Authentication (setiap orang yang
+// membuka web otomatis dapat 1 akun anonim). Rule di bawah mengizinkan setiap
+// pengguna yang sudah login (termasuk anonim) untuk membaca & menulis data
+// sesi kuis/game. Ini cocok untuk kebutuhan kuis kelas yang sederhana, tapi
+// perlu diketahui bahwa siapa pun yang membuka link kuis bisa membaca/menulis
+// data di path ini.
+// ============================================================================
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /artifacts/{appId}/public/data/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
